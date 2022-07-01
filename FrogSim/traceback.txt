@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 31, in script
+    "This must be the famous "FrogLand" everyone talks about..."
+  File "renpy/common/00library.rpy", line 284, in say
+    who(what, interact=interact, *args, **kwargs)
+Exception: Say has image attributes ('FrogLand',), but there's no image tag associated with the speaking character.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 31, in script
+    "This must be the famous "FrogLand" everyone talks about..."
+  File "C:\renpy\renpy-8.0.0-sdk\renpy\ast.py", line 901, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\renpy\renpy-8.0.0-sdk\renpy\exports.py", line 1371, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 284, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "C:\renpy\renpy-8.0.0-sdk\renpy\character.py", line 1193, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "C:\renpy\renpy-8.0.0-sdk\renpy\character.py", line 1017, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "C:\renpy\renpy-8.0.0-sdk\renpy\character.py", line 943, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('FrogLand',), but there's no image tag associated with the speaking character.
+
+Windows-10-10.0.19044 AMD64
+Ren'Py 8.0.0.22062402
+FrogSim 1.0
+Fri Jul  1 12:12:04 2022

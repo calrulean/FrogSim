@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 41: expected statement.
+    rep_level = rep_level - 1
+              ^
+
+Ren'Py Version: Ren'Py 8.0.0.22062402
+Fri Jul  1 12:37:20 2022
