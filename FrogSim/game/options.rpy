@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("FrogSim")
+define config.name = _("Welcome to FrogLand")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -29,7 +29,8 @@ define config.version = "1.0"
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
-define gui.about = _p("""
+define gui.about = _p("""\
+Created by Callie.
 """)
 
 
@@ -84,12 +85,12 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = fade
 
 
 ## Used when entering the main menu after the game has ended.
 
-define config.end_game_transition = None
+define config.end_game_transition = vpunch
 
 
 ## A variable to set the transition used when the game starts does not exist.
